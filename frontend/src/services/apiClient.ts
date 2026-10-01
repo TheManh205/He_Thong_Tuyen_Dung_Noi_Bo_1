@@ -1,5 +1,6 @@
 import axios from 'axios';
 import type { InternalAxiosRequestConfig, AxiosError, AxiosResponse } from 'axios';
+import { useAuthStore } from '../features/auth/store/auth.store';
 
 // Giả định baseURL. Bạn có thể update thành endpoint thực tế qua .env
 const baseURL = import.meta.env.VITE_API_URL || '/api/v1';
@@ -31,6 +32,10 @@ apiClient.interceptors.request.use(
 apiClient.interceptors.response.use(
   (response: AxiosResponse) => response,
   (error: AxiosError) => {
+    if (error.response?.status === 401) {
+      // Khi API trả về 401 (Hết hạn Token), bật cờ Session Expired
+      useAuthStore.getState().setSessionExpired(true);
+    }
     return Promise.reject(error);
   }
 );
