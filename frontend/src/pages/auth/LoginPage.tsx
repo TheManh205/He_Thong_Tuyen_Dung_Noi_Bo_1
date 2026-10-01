@@ -5,16 +5,16 @@ export const LoginPage = () => {
   return (
     <div className="min-h-screen w-full flex bg-white">
       {/* Left Panel - Branding */}
-      <div className="hidden lg:flex flex-col justify-center items-center w-1/2 bg-[#0d7350] text-white p-12">
+      <div className="hidden lg:flex flex-col justify-center items-center w-1/2 bg-[#097353] text-white p-12">
         {/* Illustration */}
-        <div className="w-full max-w-[420px] mb-8">
+        <div className="w-full max-w-lg mb-4 flex justify-center">
            <img 
              src={heroImg} 
              alt="Hệ Thống Tuyển Dụng" 
-             className="w-full h-auto object-contain rounded-2xl shadow-2xl" 
+             className="w-full h-auto object-cover rounded-2xl shadow-xl" 
            />
         </div>
-        <h1 className="text-3xl font-extrabold tracking-widest uppercase text-center mt-2 drop-shadow-md">
+        <h1 className="text-[34px] font-black uppercase text-center mt-6 text-white tracking-normal">
           Phát Triển Nội Bộ
         </h1>
       </div>
