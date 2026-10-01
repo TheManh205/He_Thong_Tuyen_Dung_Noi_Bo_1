@@ -1,0 +1,14 @@
+name: CI Placeholder
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder Step
+        run: echo "This is a placeholder CI. Configure actual tech stack later."
