@@ -1,5 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { LoginPage } from '../../pages/auth/LoginPage';
+import { ForgotPasswordPage } from '../../pages/auth/ForgotPasswordPage';
+import { ResetPasswordPage } from '../../pages/auth/ResetPasswordPage';
 import { useAuthStore } from '../../features/auth/store/auth.store';
 import { ProtectedRoute } from '../providers/ProtectedRoute';
 
@@ -11,6 +13,14 @@ export const router = createBrowserRouter([
   {
     path: '/login',
     element: <LoginPage />,
+  },
+  {
+    path: '/forgot-password',
+    element: <ForgotPasswordPage />,
+  },
+  {
+    path: '/reset-password',
+    element: <ResetPasswordPage />,
   },
   {
     path: '/dashboard',
