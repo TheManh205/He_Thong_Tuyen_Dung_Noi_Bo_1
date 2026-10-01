@@ -19,7 +19,7 @@ secrets/
 .DS_Store
 Thumbs.db
 
-# Dependencies (Node/Python etc.)
+# Dependencies (Node/Python/Java etc.)
 node_modules/
 __pycache__/
 *.py[cod]
@@ -27,8 +27,14 @@ __pycache__/
 venv/
 env/
 
-# Build outputs
-dist/
+# Java / Maven / Gradle
+target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/
+.gradle/
 build/
 coverage/
 *.log
