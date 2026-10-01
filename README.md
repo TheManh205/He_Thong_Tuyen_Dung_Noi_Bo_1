@@ -28,10 +28,17 @@ Hệ thống bao gồm các module chính:
 ```
 
 ## 6. Technology Stack
-Technology Stack: To be determined.
+- **Frontend**: React, TypeScript
+- **Backend**: Java
 
 ## 7. Development Setup
-(To be updated after the technology stack is finalized)
+### Frontend
+- Yêu cầu: Node.js, npm/yarn/pnpm.
+- Di chuyển vào thư mục `frontend` và cài đặt dependencies.
+
+### Backend
+- Yêu cầu: Java JDK (ví dụ JDK 17/21), Maven/Gradle.
+- Di chuyển vào thư mục `backend` để build và chạy ứng dụng.
 
 ## 8. Environment Variables
 Vui lòng copy file `.env.example` thành `.env` và điền các giá trị cần thiết. Tuyệt đối không commit file `.env` lên repository.
